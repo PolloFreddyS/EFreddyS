@@ -7,7 +7,6 @@
         flex-direction: column;
     }
 }
-
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media (max-width: 400px) {
     .navbar a {
@@ -15,29 +14,22 @@
         width: 100%;
     }
 }
-
 .header {
     padding: 60px; /* some padding */
     text-align: center; /* center the text */
-    background-image: url("Borealis_Background_Digital.png"); /* green background */
+    background-image: url("giphyblack.gif"); /* green background */
     color: white; /* white text color */
 }
-
 /* Increase the font size of the <h1> element */
 .header h1 {
     font-size: 50px;
 	font-family: 'Aladin';
 }
-
 .p2 {
 	color : white;
 	font-size: 50px;
 	
-
-
 }
-
-
   
   .borderimg{
    border-width: 1px;
@@ -48,34 +40,18 @@
   .footer {
     padding: 20px; /* Some padding */
     text-align: center; /* Center text*/
-    background-image: url("Borealis_Background_Digital.png"); 
+    background-image: url("giphyblack.gif"); 
 	color : white;
 }
-
 .row {
     display: flex;
 }
-
-.column1 {
-    flex: 85%;
-	background-image: url("blackgray.jpg"); /* green background */;
-
-}
-
-.column2 {
-    flex: 15%;
-	background-image: url("Borealis_Background_Digital.png"); 
-	
-	color : white;
-}
-
 
 /* Style the top navigation bar */
 .navbar {
     overflow: hidden; /* Hide overflow */
     background-color: #333; /* Dark background color */
 }
-
 /* Style the navigation bar links */
 .navbar a {
     float: left; /* Make sure that the links stay side-by-side */
@@ -85,39 +61,30 @@
     padding: 14px 20px; /* Add some padding */
     text-decoration: none; /* Remove underline */
 }
-
 /* Right-aligned link */
 .navbar a.right {
     float: right; /* Float a link to the right */
 }
-
 /* Change color on hover/mouse-over */
 .navbar a:hover {
     background-color: #ddd; /* Grey background color */
-    color: black; /* Black text color*/ 
+    color: black; /* Black text color */ 
 }	
-/* Gallery */
 .row2 {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
   background-image: url("6791894-free-digital-backgrounds.jpg");
 }
-
 /* Create two equal columns that sits next to each other */
-.column5 {
-  flex: 50%;
-  padding: 0 4px;
-  background-image: url("6791894-free-digital-backgrounds.jpg");
+.projectGallery{
+
+  text-align: center;
+  background-image: url("giphy.gif");
+  background-size:cover;
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  background-image: url("6791894-free-digital-backgrounds.jpg");
-}
-
-/* Social media icon */
+/* Social media icon
 /* Style all font awesome icons */
 .fa {
     padding: 20px;
@@ -127,27 +94,78 @@
     text-decoration: none;
     border-radius: 50%;
 }
-
-
+/* Add a hover effect if you want */
 
 /* Set a specific color for each brand */
-
 .fa-linkedin {
+
   color: white;
 }
-
-
 .fa-instagram {
+
   color: white;
 }
-	
-	
+
+.projContainer {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -5px;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  width: 340px;
+  height: 228px;
+  cursor: pointer;
 }
 
+.projContainer img {
+transition: 0.3s;
+}
+
+.projContainer:hover img {
+ transform: scale(1.2);
+ -webkit-transform: scale(1.2);
+}
+
+.projContainer:hover h2 {
+    padding-top: 10%;
+}
+
+.projInfoContainer {
+  position: absolute;
+  background: rgba(5,5,5,0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.projContainer:hover .projInfoContainer {
+  opacity: 1;
+}
+
+h2{
+  color: white;
+  text-transform: uppercase;
+}
+
+.projCat {
+  color: #5cd9fd;
+  font-weight: bold;
+}
+
+.projSpec {
+ color: #aaa;
+ font-family: sans-serif;
+}
+}
 
 </style> 
 	<!-- end of style -->
-<head> 
+<<head> 
  <title> FreddyS </title>
  <link rel="shortcut icon" href="Imagen3.png" />
  </head>
@@ -171,53 +189,130 @@
 
 
 <!-- Stuff about me  -->
-
-<div class="row">
-
-    <div class="column2"> <center> <h2> About me </h2>I studied Mechatronic engineering in Dominican Republic in Technological Institute of Santo Domingo. I belonged to the basketball team in my university, I have a passion for programming and 
-				process automation. I connect with the shark,which is my favorite animal,  because this is a silent animal always silent 
-				searching a new opportunity to satisfy his hungry and I'm looking for a new opportunity to grow up in this world. </center>
-				<br>
-				
-				
-				
-				
-				
-				
-</div>
-  <div class="column1">
-  <h1 class = "p2"> <center> If you want to know what this project do just CLICK! </center></h1>
-  <div class="row2"> 
-  <div class="column5">
-    <a href = "https://www.youtube.com/watch?v=0ZasOsXNCdQ"> <img class = "borderimg"  src="dise;o.JPG" style="width:50%" > </a>
-	<a href = "https://youtu.be/n4GLhFypgsU" ><img class = "borderimg"  src="propeller.jpeg" style="width:30%" ></a>
-    <a href = "https://www.youtube.com/watch?v=CnPJDR1Ri9Y"> <img class = "borderimg"  src="cadcam.jpeg" style="width:30%" ></a>
-    
+<div class = "projectGallery">
+  <!--MedAssist -->
+    <div class="projContainer">
+  <div class="projInfoContainer">
+     <a href = "https://www.youtube.com/watch?v=0ZasOsXNCdQ">
+    <h2>MedAssist</h2>
+    <p class="projCat">Category</p>
+    <p class="projSpec">Mechatronic<br />Medical Device</p>
   </div>
-  <div class="column5">
-     <a href = "https://www.youtube.com/watch?v=kCNinAiCeI4" ><img class = "borderimg"  src="feeder.JPG" style="width:40%" ></a>
-    <a href = "https://www.youtube.com/watch?v=4wlYkfEnzh4"><img class = "borderimg"   src="1.JPG" style="width:50%" ></a>
-	<a href = "https://drive.google.com/file/d/1g3DpdDgDKQbXb20UI1BB_PpcaQrs9Pa6/view?usp=sharing" ><img class = "borderimg"  src="Capture1.JPG" style="width:40%" ></a>
-   
-  </div> 
-  <div class="column5">
-    <a href = "https://www.youtube.com/watch?v=PT2cQMLbq6k" ><img class = "borderimg"  src="blitzb8.jpg" style="width:30%" ></a>
-    <a href = "https://www.youtube.com/watch?v=Xfy29WhmmCo" ><img class = "borderimg"  src="hidraulic.jpg" style="width:30%" ></a>
-    <a href = "https://www.youtube.com/watch?v=A3oeAvRMwv8" ><img class = "borderimg"  src="magnetic.jpg" style="width:30%" ></a>
-  
+  <img src="dise;o.JPG" /> </a>
+</div>
+ <!--Robot Legs -->
+    <div class="projContainer">
+  <div class="projInfoContainer">
+    <a href = "https://drive.google.com/file/d/1z-B57sERePgmzzAxvJwPhi-anQd3lcik/view?usp=sharing"> <h2>Robot legs</h2>
+    <p class="projCat">Category</p>
+      <p class="projSpec">Robotic<br />Electronic</p> </a>
   </div>
-  <div class="column5">
-    <a href = "https://drive.google.com/file/d/1z-B57sERePgmzzAxvJwPhi-anQd3lcik/view?usp=sharing"><img class = "borderimg"  src="Prueba1.JPG" style="width:40%" ></a>
-    <img class = "borderimg"  src="ins.JPG" style="width:30%" >
-  
+  <img src="Prueba1.JPG" />
+</div>
+ <!--Propeller -->
+    <div class="projContainer">
+  <div class="projInfoContainer">
+    <a href = "https://youtu.be/n4GLhFypgsU" ><h2>Propeller</h2>
+    <p class="projCat">Category</p>
+    <p class="projSpec">Electronic</p>
   </div>
+  <img src="propeller.jpeg" /></a>
+</div>
+ <!--Guide for endless saw -->
+    <div class="projContainer">
+  <div class="projInfoContainer">
+    <a href = "https://www.youtube.com/watch?v=CnPJDR1Ri9Y"><h2>guide for endless saw</h2>
+    <p class="projCat">Category</p>
+      <p class="projSpec">Manufacture</a>
+  </div>
+  <img src="cadcam.jpeg" />
+</div>
+ <!--Centrifugal Feeder -->
+    <div class="projContainer">
+  <div class="projInfoContainer">
+    <a href = "https://www.youtube.com/watch?v=kCNinAiCeI4" ><h2>Centrifugal feeder</h2>
+    <p class="projCat">Category</p>
+      <p class="projSpec">Electronic<br />
+Systematization</p> </a>
+  </div>
+  <img src="feeder.JPG" />
+</div>
+ <!--DFA expert system -->
+    <div class="projContainer">
+  <div class="projInfoContainer">
+   <a href = "https://www.youtube.com/watch?v=4wlYkfEnzh4"> <h2>DFA expert system</h2>
+    <p class="projCat">Category</p>
+     <p class="projSpec">Software<br />
+Systematization</p> </a>
+  </div>
+  <img src="1.JPG" />
+</div>
+ <!--BBlitz -->
+    <div class="projContainer">
+  <div class="projInfoContainer">
+   <a href = "https://www.youtube.com/watch?v=PT2cQMLbq6k" > <h2>BBlitz</h2>
+    <p class="projCat">Category</p>
+     <p class="projSpec">Mechatronic<br />Electronic</p> </a>
+  </div>
+  <img src="blitzb8.jpg" />
+</div>
+ <!--Remote Control for access door -->
+    <div class="projContainer">
+  <div class="projInfoContainer">
+    <a href = "https://drive.google.com/file/d/1g3DpdDgDKQbXb20UI1BB_PpcaQrs9Pa6/view?usp=sharing" > <h2>Remote Control for access door</h2>
+    <p class="projCat">Category</p>
+      <p class="projSpec">Automation<br />Electronic</p> </a>
+  </div>
+  <img src="Capture1.JPG" />
+</div>
+ <!--Hydropneumatic mixer simulator -->
+    <div class="projContainer">
+  <div class="projInfoContainer">
+    <a href = "https://www.youtube.com/watch?v=Xfy29WhmmCo" > <h2>Hydropneumatic mixer simulator</h2>
+    <p class="projCat">Category</p>
+      <p class="projSpec">Electronic<br />Hydropneumatic</p> </a>
+  </div>
+  <img src="hidraulic.jpg" />
+</div>
+ <!--Magnetic Piston --> 
+    <div class="projContainer">
+  <div class="projInfoContainer">
+    <a href = "https://www.youtube.com/watch?v=A3oeAvRMwv8" ><h2>Magnetic Piston</h2>
+    <p class="projCat">Category</p>
+      <p class="projSpec">Electronic<br />Magnetic</p> </a>
+  </div>
+  <img src="magnetic.jpg" />
+</div>
+ <!--Quote Creator -->
+   <div class="projContainer">
+  <div class="projInfoContainer">
+    <a href = "https://codepen.io/FreddyS07/full/MVrayr/" ><h2>Quote Creator</h2>
+    <p class="projCat">Category</p>
+      <p class="projSpec">Software</p> </a>
+  </div>
+  <img src="wwe.JPG" />
+</div>
+ <!--Searcher-->
+   <div class="projContainer">
+  <div class="projInfoContainer">
+    <a href = "https://codepen.io/FreddyS07/full/MVVRaQ/" > <h2>Searcher</h2>
+    <p class="projCat">Category</p>
+      <p class="projSpec">Software</p> </a>
+  </div>
+  <img src="searcher.JPG" />
+</div>
+ <!--WeatherApp -->
+   <div class="projContainer">
+  <div class="projInfoContainer">
+   <a href = "https://codepen.io/FreddyS07/full/MVVKOP/" >  <h2>WeatherApp</h2>
+    <p class="projCat">Category</p>
+     <p class="projSpec">Software</p> </a>
+  </div>
+  <img src="Cloudy.JPG" />
 </div>
   
-  
-</div>
-  
+   </div>
 
-</div>
 	  
 <!-- footer -->
 <div class = "footer" id = "contact"> 
